@@ -1,0 +1,520 @@
+/* Cards Nosotros Inicio */
+/* .card__Nosotros{
+  
+}
+.card__Nosotros img{
+  border-radius: 5px 5px 0 0;
+}
+
+.card__Nosotros:hover{
+    transform: translateY(-10px);
+    transition:  1s ease;
+    background: #0099ff;
+    color: #ffffff;
+    box-shadow: 5px 5px 5px 5px #dedede;
+} */
+
+@media (min-width: 800px) {
+  #nav-wrapper {
+    overflow: hidden;
+  }
+
+  #nav {
+    overflow: hidden;
+    flex-direction: row;
+  }
+
+  .nav-link {
+    border-top: none;
+  }
+  .nav-link.current {
+    border-bottom-color: #18775C;
+  }
+  .right {
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    left: 1.5em;
+    height: auto;
+  }
+
+  .btn-nav {
+    display: none;
+  }
+  .btn-nav {
+    color: #ffffff;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .nav a:link.active, a:visited.active, a:active.active {
+    background: #f857a8;
+    background: -webkit-linear-gradient(45deg, #ffffff, #18775C);
+    background: linear-gradient(45deg, #ffffff, #18775C);
+    color: rgb(130, 67, 67);
+  }
+  .nav-link-span {
+    display: inline-block;
+  }
+
+  .nav-link {
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .nav-link:last-child {
+    padding-right: 3em;
+  }
+
+  a:hover.nav-link:not(.active) {
+    color: #ffffff;
+    background: #18775C;
+  }
+}
+/* Cards Nosotros Inicio */
+.carta{
+  width: 19rem;
+  margin: 1.5rem 1.5rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  transition:  1s ease;
+}
+
+.carta:hover{
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition:  1s ease;
+  
+}
+
+.carta img{
+  width: 100%;
+  height: 300px;
+  border-radius: 1rem;
+}
+
+/* .contenedor__texto h1{
+  text-align: center;
+  padding: 5px;
+  color: #006e44;
+  font-weight: bold;
+  font-size: 50px;
+} */
+
+.contenedor__texto p{
+  text-align: center;
+  padding: 5px;
+  color: #a6a6a6; 
+}
+
+.carta .texto__carta h2{
+  text-align: center;
+  padding: 5px;
+  color: #18775C;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.carta .texto__carta p{
+  text-align: center;
+  padding: 5px;
+  color: #a6a6a6;
+}
+/* Cards Nosotros Fin */
+
+
+
+/* Cards Productos y Servicios Inicio */
+/* .card__ProductoServicio{
+  box-shadow: 4px 6px 8px 1px rgba(162, 162, 162, 0.889)
+}
+.card__ProductoServicio img{
+  border-radius: 5px 5px 0 0;
+}
+
+.card__ProductoServicio:hover{
+    transform: translateY(-15px);
+    transition:  1s ease;
+} */
+.card__producto {
+  margin: 20px;
+  width: 500px;
+  height: 400px;
+  border-radius: 5px;
+  background: url('../../../assets/img/Artesania.jpg');
+  background-size: cover;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card__servicio {
+  margin: 20px;
+  width: 500px;
+  height: 400px;
+  border-radius: 5px;
+  background: url('../../../assets/img/Quiro.jpg');
+  background-size: cover;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.content__product {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(24 119 92 / 38%);
+  opacity: 0;
+  transition: .5s;
+}
+
+.content__product h2, a {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 10px 0;
+}
+
+.card__producto:hover .content__product {
+  opacity: 1;
+}
+.card__servicio:hover .content__product {
+  opacity: 1;
+}
+
+.content__product a:hover {
+  text-decoration: none;
+}
+
+.card_p{
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  border: none; 
+}
+
+.cont{
+ padding: 0.5rem;
+ 
+}
+.img_p{
+  width: 100%;
+  height: 350px;
+  border-radius: 1.5rem;
+}
+ 
+Map{
+  border-radius: 1.5rem;
+}
+
+/* Cards Productos y Servicios Fin */
+
+
+
+/* Encabezado Inicio */
+.encabezado{
+  height: 100vh;
+  background-image: linear-gradient(#18775C, rgba(255, 255, 255, 0.722)), url('../../../assets/img/img2.jpg');
+  background-attachment: fixed;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #ffffff;
+
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
+}
+
+@keyframes up{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+.texto{
+  grid-column: 2;
+  grid-row: 1/-1;
+  align-self: center;
+
+  display: grid;
+  gap: 2rem;
+
+  animation: up 1.5s ease-in;
+}
+
+.titulo{
+  font-size: 40px;
+}
+
+.parrafo{
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+
+.wave{
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  align-self: end;
+  height: 200px;
+  width: 100%;
+}
+/* Encabezado Fin */
+
+
+/* Unirse Inicio */
+.Barra{
+  height: 100vh;
+  background-image: linear-gradient(rgb(24 119 92), rgba(255, 255, 255, 0.722)), url(/images/img3.jpg?6825ec6…);
+  background-attachment: fixed;
+  background-position: center;
+
+  color: #ffffff;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
+}
+
+.enlace{
+  color: #a52d2d;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 10px 30px;
+  opacity: 1;
+}
+
+.enlace:hover{
+  color: #a52d2d;
+  font-size: 30px;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+/* Unirse Fin */
+
+
+
+/* Footer Inicio */
+footer{
+  width: 100%;
+  padding: 50px 0px;
+  font-family: 'Nunito', sans-serif;
+  background: #18775C;
+  background-size: cover;
+}
+
+.contenedor__footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.contenido__footer{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.contenido__footer .logo img{
+  width: 180px;
+}
+
+.contenido_footer .parrafo_footer{
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 18px;
+
+}
+
+.contenido__footer h2{
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.contenido__footer a{
+  margin-top: 10px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contenido__footer a:hover{
+  opacity: 0.8;
+}
+
+.contenido__footer a .fab{
+  font-size: 20px;
+}
+
+.contenido__copyright{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.contenido__copyright p{
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.contenido__copyright hr{
+  border: none;
+  height: 1px;
+  background-color: #fababa;
+}
+/* Footer Fin */
+
+
+
+
+/* Card Creditos Inicio */
+/* .contenedor__carta{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffffff;
+  margin: auto;
+} */
+.text__muni__green{
+  color: #18775C
+}
+
+.text__muni__red{
+  color: #a52d2d
+}
+
+.btn__muni__green{
+  background-color: #18775C;
+}
+.btn__muni__green:hover{
+  background-color: #18775d70;
+}
+
+.btn__muni__red{
+  background-color: #a52d2d;
+}
+.btn__muni__red:hover{
+  background-color: #a52d2d79;
+}
+
+.card__presentacion {
+  position: relative;
+  width: 270px;
+  height: 400px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: .5s;
+  margin: 15px 20px;
+  border: rgba(99, 99, 99, 0.286) solid 1px;
+}
+
+.card__presentacion:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-15px);
+}
+
+.card__presentacion .head {
+  height: 125px;
+  width: 100%;
+  position: relative;
+}
+
+/* .card__presentacion .head .circle{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #0099ff82;
+  bottom: 0;
+} */
+
+.card__presentacion .head span{
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  background: #18775C;
+  transform: rotate(-180deg);
+  top: -80px;
+  left: -50px;
+}
+
+.card__presentacion .head .img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.card__presentacion .head .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.card__presentacion .description {
+  height: 200px;
+  padding: 40px 20px 20px 20px;
+  border-bottom: solid 1px rgba(6, 74, 76, .18);
+  text-align: center;
+}
+
+.card__presentacion .description h3 {
+  color: #05383a;
+}
+
+.card__presentacion .description h5 {
+  color: #1c5a5c;
+}
+
+.card__presentacion .description p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+
+.card__presentacion .contact {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__presentacion .contact a {
+  text-decoration: none;
+  color: #fff;
+  background: #18775C;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.card__presentacion .contact a:hover {
+
+  background: #18775c75;
+
+}
+/* Card Creditos Fin */
